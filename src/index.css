@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-script: "Dancing Script", cursive;
+  --font-hand: "Great Vibes", cursive;
+
+  --color-cream: #faf6f0;
+  --color-cream-deep: #f2eadf;
+  --color-card: #fffdf9;
+  --color-brown: #5c3317;
+  --color-brown-dark: #44250f;
+  --color-rust: #b4532a;
+  --color-ink: #1e1a17;
+  --color-muted: #5e554d;
+  --color-line: #e6dccf;
+  --color-night: #15110e;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    overflow-x: clip;
+  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.font-hand {
+  font-family: var(--font-hand);
+}
+
+/* Container matching Koi Cafe */
+.container-koi {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-koi {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-koi {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Subtle organic paper texture dot matrix matching Koi Cafe */
+.bg-koi-pattern {
+  background-image: radial-gradient(#e2d5c3 1.2px, transparent 1.2px);
+  background-size: 26px 26px;
+}
+
+/* Hide scrollbar for smooth horizontal tab scrollers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

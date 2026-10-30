@@ -1,0 +1,6 @@
+{
+  "name": "Niwara Gym by V3 Fitness",
+  "description": "Premium fitness destination in Navi Peth, Pune. Strength training, CrossFit, Zumba, and personal coaching in an uplifting, state-of-the-art environment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
